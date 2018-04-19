@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Vue from 'vue'
+
 //创建一个新的实例
 let instance = axios.create({
   headers:{
@@ -40,6 +41,13 @@ export function login(info){
 export function dsp_report(info){
   return new Promise((resolve,reject)=>{
     instance.post('/dsp-report/index',info).then(res=>{
+      resolve(res)
+    })
+  })
+}
+export function dsp_plan(info){
+  return new Promise((resolve,reject)=>{
+    instance.post('/dsp-plan/index',info).then(res=>{
       resolve(res)
     })
   })

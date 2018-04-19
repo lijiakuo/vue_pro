@@ -27,7 +27,7 @@ export default {
     }
   },
   mounted(){
-    // console.log(arr)
+    // console.log(this.$store.state.dataList)
   },
   components:{
     NavRouter,

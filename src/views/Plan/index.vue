@@ -82,6 +82,7 @@
 
 <script>
 import NavRouter from '@/components/NavRouter'
+import {dsp_plan} from './../../untils/request.js'
   export default {
     name:'Plan',
     data(){
@@ -121,6 +122,12 @@ import NavRouter from '@/components/NavRouter'
         }],
         multipleSelection: []
       }
+    },
+    mounted(){
+      console.log(dsp_plan);
+      dsp_plan({name:'ljk'}).then(res=>{
+        console.log(res);
+      })
     },
     methods: {
       toggleSelection(rows) {

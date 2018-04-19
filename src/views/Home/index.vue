@@ -18,7 +18,6 @@
               value-format="yyyy/MM"
               placeholder="选择月">
             </el-date-picker>
-          
         </span>
       </el-col>
     </el-row>
