@@ -27,7 +27,7 @@ export default {
     }
   },
   mounted(){
-    console.log(arr)
+    // console.log(arr)
   },
   components:{
     NavRouter,

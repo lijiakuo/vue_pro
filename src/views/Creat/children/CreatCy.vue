@@ -7,23 +7,15 @@
     </div>
     <div class="tt">
       <h1>上传创意</h1>
-      <el-button type="text" @click="open5"><b style="color:#2873FF;cursor: pointer">+添加创意</b></el-button>
-    </div>
-    <div class='upDown' v-show='$store.state.onShow'>
-      <el-upload
-        class="avatar-uploader"
-        action="http://localhost:9000/dsp-creative/creative/upload"
-        :show-file-list="false"
-        :on-success="handleAvatarSuccess"
-        :before-upload="beforeAvatarUpload">
-        <img v-if="imageUrl" :src="imageUrl" class="avatar">
-        <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-      </el-upload>
+      <liItem @edit="addFn" :arrList="arrList">
+        <div class='upDown' v-for='(item,index) in arrList' :slot='item.name' :key='index'>
+         <UpDown></UpDown>
+        </div>
+      </liItem>
     </div>
     <div class="tt">
       <span style='background:#E8E8E8;cursor: pointer'>提交</span>
     </div>
-     
   </div>
   
 </template>
@@ -31,11 +23,18 @@
 <script>
   import Mark from '@/components/Mark'
   import kk from '@/components/kk'
+  import UpDown from '@/components/UpDown'
+  import liItem from '@/components/liItem'
   export default {
     name:'CreatCy',
     data(){
       return {
-         imageUrl: ''
+         imageUrl: '',
+         arrList:[{
+          label:'创意1',
+          name:'tab-1'
+         }],
+         len:1
       }
     },
     methods:{
@@ -72,10 +71,20 @@
           this.$message.error('上传头像图片大小不能超过 2MB!');
         }
         return isJPG && isLt2M;
+      },
+      addFn(text){
+      console.log(text);
+        // let len=1;
+        this.arrList.push({
+          label:"创意"+(++this.len),
+          name:'tab'+'-'+this.len
+        })
       }
     },
     components:{
-      kk
+      kk,
+      liItem,
+      UpDown
     }
   }
 </script>
