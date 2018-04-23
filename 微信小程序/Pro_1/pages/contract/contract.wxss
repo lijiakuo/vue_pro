@@ -1,0 +1,71 @@
+/* pages/contract/contract.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.contract{
+  width: 100%;
+  height: 100%;
+   background: #F9F8FE ; 
+  position: relative;
+  overflow: hidden;
+}
+.list-pp{
+  overflow-y: scroll;
+ box-sizing: border-box;
+  position: absolute;
+  top:0;
+  left:0; 
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  /* background: #ccc; */
+  
+}
+.list-p{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 0 10px;
+  box-sizing: border-box
+}
+.list-p:hover{
+  background: #B0B0B0;
+}
+.bg image{
+  height: 200px;
+}
+.list-h{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.list-c{
+  flex: 1;
+  margin-top: 20px;
+  position: relative;
+}
+.list-ch{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+.list-r{
+  margin-left: 10px;
+}
+.list-l{
+  color: #C2C2C2;
+}
+.list-b{
+  position:absolute;
+  bottom:38px;
+  right:0px;
+  background:#349BFF;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: #fff;
+}

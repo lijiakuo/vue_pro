@@ -1,0 +1,81 @@
+<!--pages/contract/contract.wxml-->
+<view class='contract'>
+  <view class='bg'>
+    <image src="{{bg}}" ></image>
+  </view>
+  <view class='list-pp'>
+    <view class='list-p' bindtap='applyFn'>
+      <view class='list-h'>
+        合同编号:612699
+      </view>
+      <view class='list-c'>
+        <view class='list-ch'>
+          <view class='list-l'>教学中心</view><view class='list-r'>北京西坝河</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>实付金额</view><view class='list-r'>￥13768.00</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>签订日期</view><view class='list-r'>2017-01-01</view>
+        </view>
+        <view class='list-b'>申请发票</view>
+      </view>
+    </view>
+    <view class='list-p' bindtap='findFn'>
+      <view class='list-h'>
+        合同编号:612699
+      </view>
+      <view class='list-c'>
+        <view class='list-ch'>
+          <view class='list-l'>教学中心</view><view class='list-r'>北京西坝河</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>实付金额</view><view class='list-r'>￥13768.00</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>签订日期</view><view class='list-r'>2017-01-01</view>
+        </view>
+        <view class='list-b'>查看发票</view>
+      </view>
+    </view>
+    <view class='list-p'>
+      <view class='list-h'>
+        合同编号:612699
+      </view>
+      <view class='list-c'>
+        <view class='list-ch'>
+          <view class='list-l'>教学中心</view><view class='list-r'>北京西坝河</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>实付金额</view><view class='list-r'>￥13768.00</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>签订日期</view><view class='list-r'>2017-01-01</view>
+        </view>
+        <view class='list-b'>申请发票</view>
+      </view>
+    </view>
+    <view class='list-p'>
+      <view class='list-h'>
+        合同编号:612699
+      </view>
+      <view class='list-c'>
+        <view class='list-ch'>
+          <view class='list-l'>教学中心</view><view class='list-r'>北京西坝河</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>实付金额</view><view class='list-r'>￥13768.00</view>
+        </view>
+        <view class='list-ch'>
+          <view class='list-l'>签订日期</view><view class='list-r'>2017-01-01</view>
+        </view>
+        <view class='list-b'>申请发票</view>
+      </view>
+    </view>
+    <view>
+      <modal hidden="{{hidden}}" title="这里是title" confirm-text="自定义确定按钮" cancel-text="自定义取消按钮" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    这是对话框的内容。
+</modal>
+    </view>
+  </view>
+</view>

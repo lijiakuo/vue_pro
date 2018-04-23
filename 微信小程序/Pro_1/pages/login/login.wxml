@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="formSubmit" class='login-box' bindreset="formReset">
+  <view class="section">
+    <view class="section__title">
+      <image src="{{src}}"></image>
+    </view>
+  </view>
+  <view class="sections">
+    <input name="input" placeholder="请输入手机号" />
+  </view>
+  <view class="sections">
+    <input name="input1" placeholder="请输入验证码" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">立即登录</button>
+  </view>
+  <view>
+    
+  </view>
+</form>
+

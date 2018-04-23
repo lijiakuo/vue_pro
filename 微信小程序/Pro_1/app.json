@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+   "pages/login/login",
+    
+    "pages/contract/contract",
+    "pages/find/find"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#349BFF",
+    "navigationBarTitleText": "斜阳",
+    "navigationBarTextStyle": "black"
+  }
+}
