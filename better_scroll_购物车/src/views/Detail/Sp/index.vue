@@ -53,15 +53,14 @@ import Tail from '@/components/Tail'
         let listsArr = document.getElementsByClassName('lists');
         let lis = document.querySelector('.left-content');
         this.scrolls.scrollToElement(listsArr[index], 500,0,0)
-      },
-      
+      }
     },
     mounted(){
       this.$store.dispatch('getNavList',{$http:this.$http})
       let {scroller,scrollers}=this.$refs;
       this.scroll=new BScroll(scroller, {
         scrollY: true,
-        click: true,
+        click: true
       })
       this.scrolls=new BScroll(scrollers, {
         scrollY: true,
